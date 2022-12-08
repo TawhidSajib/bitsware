@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'bitsware',
+    title: 'Bitsware',
     htmlAttrs: {
       lang: 'en'
     },
@@ -16,8 +16,27 @@ export default {
     ]
   },
 
+  // Google Fonts: https://google-fonts.nuxtjs.org/
+  googleFonts: {
+    display: 'swap',
+    families: {
+      Jost: {
+        wght: [400,500,600,700]
+      }
+    }
+  },
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '~/assets/scss/style.scss',
+    'bootstrap/dist/css/bootstrap.min.css'
+  ],
+
+  script: [
+    {
+      src: 'bootstrap/dist/js/bootstrap.bundle.min.js',
+      type: 'text/javascript'
+    }
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -29,7 +48,8 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    '@nuxt/postcss8'
+    '@nuxt/postcss8',
+    '@nuxtjs/google-fonts'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
