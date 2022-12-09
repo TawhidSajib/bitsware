@@ -2,9 +2,9 @@
     <section class="menu">
         <nav class="navbar py-0 navbar-expand-lg">
             <div class="container">
-                <a href="#">
+                <NuxtLink to="/">
                     <img src="~assets/images/logo.png" alt="Logo">
-                </a>                
+                </NuxtLink>
             </div>
         </nav>
     </section>
