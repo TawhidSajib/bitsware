@@ -1,9 +1,16 @@
 <template>
-  <Tutorial/>
+  <Nav/>
 </template>
 
 <script>
-export default {
-  name: 'IndexPage'
+
+import Nav from '~/components/Nav.vue';
+
+export default {  
+  name: 'Home',
+  components: {
+    Nav
+  }
 }
+
 </script>
