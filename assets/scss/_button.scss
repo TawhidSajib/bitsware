@@ -1,0 +1,16 @@
+.btn-blue {
+    display: inline-flex;
+    background-color: $secondary-1;
+    border-radius: 5px;
+    @include padding(16px,32px,16px,32px);
+    color: $white-100;
+    transition: all 0.3s ease;
+    img {
+        margin-left: 10px;
+    }
+    &:hover {
+        color: $white-100;
+        background-color: $primary-1;
+        transition: all 0.3s ease;
+    }
+}

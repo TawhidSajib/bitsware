@@ -1,0 +1,50 @@
+.header {
+    @include padding(110px,0px,110px,0px);
+    background: linear-gradient(96deg, $secondary-9 0%, $secondary-10 100%);
+    h2 {
+        @include font($base-font,66px,700,72.6px);
+        color: $black-1000;
+        letter-spacing: 0.02em;
+        margin-bottom: 10px;
+    }
+    h1 {
+        @include font($base-font,90px,700,99px);
+        color: $black-1000;
+        span {
+            color: $secondary-1;
+        }
+        margin-bottom: 25px;
+    }
+    h3 {
+        @include font($base-font,$heading-1,$font-weight-4,$line-height-1);
+        color: $black-1000;
+        margin-bottom: 36px;
+    }
+    p {
+        @include font($base-font,$heading-4,$font-weight-1,40.32px);
+        color: $black-900;
+        max-width: 680px;
+        @include margin(0px,0px,50px,0px);
+    }
+    .btn-blue {
+        @include font($base-font,$base-font-size,$font-weight-1,21.76px);
+        text-decoration: none;        
+    }
+    &__top {
+        &--1 {
+            left: 90px;
+            top: 90px;
+        }
+    }
+    &__bottom {
+        &--1 {
+            right: 90px;
+            bottom: 25px;
+            z-index: 5;
+        }
+        &--2 {
+            right: 0;
+            bottom: 0;
+        }
+    }
+}
