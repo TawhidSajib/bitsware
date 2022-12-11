@@ -24,7 +24,7 @@
         @include font($base-font,$heading-4,$font-weight-1,40.32px);
         color: $black-900;
         max-width: 680px;
-        @include margin(0px,0px,50px,0px);
+        margin-bottom: 50px;
     }
     .btn-blue {
         @include font($base-font,$base-font-size,$font-weight-1,21.76px);

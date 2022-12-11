@@ -1,7 +1,8 @@
 <template>
   <div>
     <Nav/>
-    <Header/>    
+    <Header/>
+    <WeProvide/>    
   </div>
 </template>
 
@@ -9,12 +10,14 @@
 
 import Nav from '~/components/Nav';
 import Header from '~/components/Header';
+import WeProvide from '~/components/Home/WeProvide';
 
 export default {  
   name: 'Home',
   components: {
     Nav,
-    Header
+    Header,
+    WeProvide
   }
 }
 

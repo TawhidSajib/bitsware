@@ -1,0 +1,8 @@
+.weprovide {
+    @include padding(150px,0px,75px,0px);
+    h3 {
+        @include font($base-font,$heading-5,$font-weight-1,31.2px);
+        color: $black-900;
+        margin-bottom: 0;
+    }
+}
