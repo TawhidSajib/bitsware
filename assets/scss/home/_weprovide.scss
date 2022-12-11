@@ -5,4 +5,59 @@
         color: $black-900;
         margin-bottom: 0;
     }
+    &__services {
+        margin-top: 65px;
+        &--block {
+            background: #F5F9FE;
+            border: 1px solid rgba(66, 133, 244, 0.5);
+            border-radius: 8px;
+            @include padding(40px,40px,40px,40px);
+            transition: all 0.2s ease;
+            h4 {
+                @include font($base-font,$heading-5,$font-weight-3,26px);
+                color: $black-1000;
+                letter-spacing: 0.01em;
+            }
+            img {
+                @include margin(24px,0px,24px,0px);
+            }
+            p {
+                @include font($base-font,$base-font-size,$font-weight-1,$line-height-5);
+                color: $black-900;
+                margin-bottom: 0;
+            }
+            &:hover {
+                border: 6px solid $white-100;
+                background: linear-gradient(93.59deg, #E6FAF5 -12.1%, #FAF3E6 110.31%) !important;
+                box-shadow: 0px 10px 30px -3px rgba(9, 9, 32, 0.09);
+                transition: all 0.2s ease;
+                margin-top: -6px;
+                cursor: pointer;
+                .weprovide__services--read {
+                    img:first-child {
+                        display: none;
+                    }
+                    img:last-child {
+                        display: inline-block;
+                    }
+                }
+                .btn-white {
+                    color: $white-100;
+                    background-color: $secondary-11;                    
+                }
+            }
+        }
+        &--btn {
+            margin-top: 40px; 
+            .btn-white {
+                @include font($base-font,$base-font-size,$font-weight-2,20px);
+                text-decoration: none;        
+            }                       
+        }
+        &--read {
+            img:last-child {
+                display: none;
+            }
+        }
+    }    
 }
