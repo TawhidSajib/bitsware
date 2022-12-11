@@ -1,8 +1,8 @@
 <template>
     <section class="header position-relative">
-            <img :src="header_ornament_1" alt="Header Ornament" class="position-absolute header__top--1">
-            <img :src="header_ornament_1" alt="Header Ornament" class="position-absolute header__bottom--1">
-            <img :src="header_ornament_2" alt="Header Ornament" class="position-absolute header__bottom--2">
+        <img :src="header_ornament_1" alt="Header Ornament" class="position-absolute header__top--1">
+        <img :src="header_ornament_1" alt="Header Ornament" class="position-absolute header__bottom--1">
+        <img :src="header_ornament_2" alt="Header Ornament" class="position-absolute header__bottom--2">
         <div class="container">
             <div class="row">
                 <div class="col-lg-7">
