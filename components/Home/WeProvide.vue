@@ -1,5 +1,8 @@
 <template>
-    <section class="weprovide">
+    <section class="weprovide position-relative">
+        <img :src="plus_01" alt="Ornaments" class="position-absolute weprovide__ornament1">
+        <img :src="plus_02" alt="Ornaments" class="position-absolute weprovide__ornament2">
+        <img :src="round_01" alt="Ornaments" class="position-absolute weprovide__ornament3">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -98,6 +101,9 @@ import designDevelopment from '~/assets/svg/design-development.svg';
 import mobileApplication from '~/assets/svg/mobile-application.svg';
 import readMore from '~/assets/svg/read-more.svg';
 import readMoreHover from '~/assets/svg/read-more-hover.svg';
+import plus01 from '~/assets/svg/plus01.svg';
+import plus02 from '~/assets/svg/plus02.svg';
+import round01 from '~/assets/svg/round01.svg';
 
 export default {
     name: 'WhatWeProvide',
@@ -111,7 +117,10 @@ export default {
             design_development: designDevelopment,
             mobile_application: mobileApplication,
             read_more: readMore,
-            read_more_hover: readMoreHover
+            read_more_hover: readMoreHover,
+            plus_01: plus01,
+            plus_02: plus02,
+            round_01: round01
         }
     }
 }

@@ -1,5 +1,17 @@
 .weprovide {
     @include padding(150px,0px,75px,0px);
+    &__ornament1 {
+        left: 100px;
+        top: 310px;
+    }
+    &__ornament2 {
+        top: 150px;
+        right: 350px;
+    }
+    &__ornament3 {
+        top: 320px;
+        right: 130px;
+    }
     h3 {
         @include font($base-font,$heading-5,$font-weight-1,31.2px);
         color: $black-900;
